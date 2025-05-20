@@ -102,45 +102,45 @@ Faktorial dari 5 adalah 120
 
 ## Kapan Rekursi Digunakan?
 
-**1. Masalah yang dapat dibagi menjadi submasalah yang identik**
+1. **Masalah yang dapat dibagi menjadi submasalah yang identik**
 - Perhitungan faktorial
 - Fibonacci
 - Pencarian biner
 - Algoritma divide-and-conquer
 
-**2. Struktur data rekursif**
+2. **Struktur data rekursif**
 - Pohon (traversal, pencarian)
 - Graf (DFS, BFS)
 - Linked list
 
-**3. Kasus di mana solusi rekursif lebih jelas dan mudah dipahami**
+3. **Kasus di mana solusi rekursif lebih jelas dan mudah dipahami**
 - Algoritma backtracking (seperti 8-queen problem)
 - Algoritma dalam permainan (seperti catur)
 
-**4. Definisi matematis yang secara alami rekursif**
+4. **Definisi matematis yang secara alami rekursif**
 - Pengurutan (merge sort, quicksort)
 - Tower of Hanoi
 - Problem kombinatorial
 
 ## Kapan Rekursi Tidak Cocok Digunakan
 
-**1. Kedalaman rekursi yang besar**
+1. **Kedalaman rekursi yang besar**
 Risiko stack overflow
 Contoh: Menghitung Fibonacci untuk angka besar
 
-**2. Masalah yang lebih efisien diselesaikan secara iteratif**
+2. **Masalah yang lebih efisien diselesaikan secara iteratif**
 Loop sederhana lebih cepat daripada pemanggilan fungsi berulang
 Contoh: Perulangan array sederhana
 
-**3. Keterbatasan memori**
+3. **Keterbatasan memori**
 Setiap pemanggilan rekursif menggunakan memori di stack
 Tidak cocok untuk perangkat dengan memori terbatas
 
-**4. Ketika performa menjadi perhatian utama**
+4. **Ketika performa menjadi perhatian utama**
 Rekursi biasanya lebih lambat karena overhead pemanggilan fungsi
 Contoh: Pemrosesan real-time atau aplikasi dengan data besar
 
-**5. Kasus yang membutuhkan kontrol aliran yang kompleks**
+5. **Kasus yang membutuhkan kontrol aliran yang kompleks**
 Rekursi sulit untuk dihentikan di tengah proses
 Penanganan kesalahan lebih rumit dalam fungsi rekursif
 
