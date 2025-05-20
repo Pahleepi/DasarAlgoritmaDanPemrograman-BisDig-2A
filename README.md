@@ -168,6 +168,14 @@ Array dalam Python diimplementasikan sebagai struktur data list. Dalam studi kas
 
 List dalam program ini (`nilai_siswa`) berfungsi sebagai wadah yang menyimpan nilai numerik setiap siswa secara berurutan. Indeks dalam list (dimulai dari 0) dapat digunakan untuk mengidentifikasi siswa ke berapa yang memiliki nilai tertentu.
 
+## Manfaat Array ##
+
+- Penyimpanan Efisien: Menyimpan banyak data dengan nama variabel yang sama
+- Akses Cepat: Mengakses elemen dengan kompleksitas waktu konstan
+- Pengelolaan Data: Mempermudah manipulasi sekelompok data terkait
+- Optimasi Memori: Menghemat memori dengan struktur homogen
+- Dasar Algoritma: Fundamental untuk banyak algoritma penting
+
 ### 2. Penggunaan Perulangan
 
 Dalam studi kasus ini, perulangan digunakan untuk:
@@ -191,6 +199,13 @@ Dalam studi kasus ini, perulangan digunakan untuk:
    ```
 
 Perulangan memungkinkan program untuk mengeksekusi tugas berulang seperti pengumpulan input atau pemrosesan data dengan kode yang ringkas dan efisien.
+
+## Manfaat Perulangan ##
+
+- Efisiensi Kode: Mengurangi repetisi kode
+- Skalabilitas: Memproses data dalam jumlah besar tanpa menulis lebih banyak kode
+- Fleksibilitas: Dapat digunakan untuk berbagai skenario pemrosesan data
+- Pemeliharaan Kode: Lebih mudah memperbarui dan memperbaiki kode
 
 ## Alur Kerja Program
 
