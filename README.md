@@ -1,3 +1,6 @@
+# Tugas UTS Mata Kuliah Dasar Algoritma dan Pemrograman Bisnis Digital-2A
+Dalam file README.md ini menjelaskan konsep, cara kegunaan, dan manfaat dari program yang sudah dibuat berdasarkan soal UTS yang sudah dibeerikan di web e-campus
+
 # Faktorial Rekursif
 
 Repository ini berisi implementasi program Python untuk menghitung faktorial menggunakan fungsi rekursif, sebagai bagian dari mata kuliah Dasar Algoritma dan Pemrograman untuk program studi Bisnis Digital.
