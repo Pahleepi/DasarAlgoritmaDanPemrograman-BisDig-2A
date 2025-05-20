@@ -168,7 +168,7 @@ Array dalam Python diimplementasikan sebagai struktur data list. Dalam studi kas
 
 List dalam program ini (`nilai_siswa`) berfungsi sebagai wadah yang menyimpan nilai numerik setiap siswa secara berurutan. Indeks dalam list (dimulai dari 0) dapat digunakan untuk mengidentifikasi siswa ke berapa yang memiliki nilai tertentu.
 
-## Manfaat Array ##
+## Manfaat Array 
 
 - Penyimpanan Efisien: Menyimpan banyak data dengan nama variabel yang sama
 - Akses Cepat: Mengakses elemen dengan kompleksitas waktu konstan
@@ -200,7 +200,7 @@ Dalam studi kasus ini, perulangan digunakan untuk:
 
 Perulangan memungkinkan program untuk mengeksekusi tugas berulang seperti pengumpulan input atau pemrosesan data dengan kode yang ringkas dan efisien.
 
-## Manfaat Perulangan ##
+## Manfaat Perulangan 
 
 - Efisiensi Kode: Mengurangi repetisi kode
 - Skalabilitas: Memproses data dalam jumlah besar tanpa menulis lebih banyak kode
@@ -242,8 +242,6 @@ Diperoleh oleh siswa ke-3
 5. **Penanganan Indeks**: Konversi indeks ke nomor siswa (indeks+1)
 6. **Penanganan Kasus Khusus**: Deteksi nilai tertinggi yang sama pada beberapa siswa
 
-## Relevansi dalam Bisnis Digital
-
 Konsep-konsep yang digunakan dalam program ini (array, perulangan, pencarian nilai) adalah dasar yang penting dalam pengembangan sistem informasi bisnis, seperti:
 
 - Sistem penilaian kinerja karyawan
@@ -252,3 +250,285 @@ Konsep-konsep yang digunakan dalam program ini (array, perulangan, pencarian nil
 - Sistem pendukung keputusan untuk identifikasi peluang bisnis
 
 Kemampuan untuk menyimpan, memproses, dan menganalisis data menggunakan struktur data dan algoritma yang tepat adalah keterampilan fundamental dalam pengembangan solusi bisnis digital.
+
+# Kalkulator Diskon E-Commerce Menggunkan Struktur Kontrol Percabangan
+
+## Penjelasan Struktur Kontrol Percabangan untuk Logika Diskon
+
+### Konsep Dasar Struktur Kontrol Percabangan
+
+Struktur kontrol percabangan adalah mekanisme pengambilan keputusan dalam pemrograman yang memungkinkan program untuk mengeksekusi blok kode tertentu berdasarkan hasil evaluasi suatu kondisi. Percabangan memungkinkan program untuk "berpikir" dan memutuskan alur eksekusi yang berbeda berdasarkan kondisi yang diberikan.
+
+### Implementasi dalam Sistem Diskon E-Commerce
+
+Dalam studi kasus sistem e-commerce ini, struktur kontrol percabangan digunakan untuk menentukan apakah pelanggan berhak mendapatkan diskon berdasarkan total nilai belanja mereka. Logikanya adalah sebagai berikut:
+
+```python
+if total_belanja > 500000:
+    # Jika total belanja lebih dari Rp500.000, berikan diskon 10%
+    diskon = total_belanja * 0.1
+else:
+    # Jika total belanja kurang dari atau sama dengan Rp500.000, tidak ada diskon
+    diskon = 0
+```
+
+Struktur percabangan ini memiliki komponen-komponen berikut:
+
+1. **Kondisi**: `total_belanja > 500000` adalah ekspresi boolean yang dievaluasi oleh program. Jika hasilnya `True` (total belanja lebih dari Rp500.000), maka blok kode pertama dijalankan. Jika `False`, blok kode setelah `else` yang dijalankan.
+
+2. **Blok if**: Kode yang dijalankan ketika kondisi bernilai `True`. Dalam kasus ini, diskon dihitung sebesar 10% dari total belanja.
+
+3. **Blok else**: Kode yang dijalankan ketika kondisi bernilai `False`. Dalam kasus ini, tidak ada diskon yang diberikan (diskon = 0).
+
+### Keuntungan Penggunaan Struktur Kontrol Percabangan
+
+1. **Fleksibilitas**: Mudah untuk mengubah logika bisnis, seperti mengubah persentase diskon atau batas minimal belanja.
+
+2. **Keterbacaan**: Kode menjadi lebih terstruktur dan mudah dipahami, karena jelas kapan diskon diberikan dan kapan tidak.
+
+3. **Ekstensibilitas**: Mudah untuk menambahkan kondisi tambahan, misalnya jika ingin menerapkan tingkatan diskon berbeda untuk rentang nilai belanja yang berbeda.
+
+4. **Efisiensi**: Program hanya menjalankan blok kode yang relevan dengan kondisi, menghemat sumber daya komputasi.
+
+### Variasi Struktur Percabangan dalam Sistem Diskon
+
+Struktur percabangan dapat diperluas untuk menangani berbagai skenario diskon yang lebih kompleks, misalnya:
+
+```python
+if total_belanja > 1000000:
+    # Diskon 15% untuk belanja di atas Rp1.000.000
+    diskon = total_belanja * 0.15
+elif total_belanja > 500000:
+    # Diskon 10% untuk belanja di atas Rp500.000
+    diskon = total_belanja * 0.1
+else:
+    # Tidak ada diskon untuk belanja Rp500.000 ke bawah
+    diskon = 0
+```
+
+Struktur ini memungkinkan implementasi kebijakan diskon bertingkat, yang umum digunakan dalam strategi pemasaran e-commerce.
+
+## Alur Kerja Program Kalkulator Diskon
+
+1. Program meminta input total belanja dari pengguna.
+2. Input divalidasi untuk memastikan nilai numerik positif.
+3. Program menentukan apakah total belanja memenuhi syarat untuk mendapatkan diskon (> Rp500.000).
+4. Jika syarat terpenuhi, program menghitung diskon sebesar 10% dari total belanja.
+5. Program menghitung total yang harus dibayar (total belanja - diskon).
+6. Program menampilkan rincian pembayaran: total belanja, diskon, dan total bayar.
+
+## Contoh Penggunaan Program
+
+### Skenario 1: Total Belanja di Bawah Batas Diskon
+
+```
+PROGRAM KALKULATOR DISKON E-COMMERCE
+====================================
+Masukkan total belanja (Rp): 400000
+Maaf, Anda tidak mendapatkan diskon.
+
+===== RINCIAN PEMBAYARAN =====
+Total Belanja: Rp400.000,00
+Diskon: Rp0,00
+Total Bayar: Rp400.000,00
+```
+
+### Skenario 2: Total Belanja di Atas Batas Diskon
+
+```
+PROGRAM KALKULATOR DISKON E-COMMERCE
+====================================
+Masukkan total belanja (Rp): 750000
+Selamat! Anda mendapatkan diskon 10%.
+
+===== RINCIAN PEMBAYARAN =====
+Total Belanja: Rp750.000,00
+Diskon: Rp75.000,00
+Total Bayar: Rp675.000,00
+```
+
+### Skenario 3: Total Belanja Sama Dengan Batas Diskon
+
+```
+PROGRAM KALKULATOR DISKON E-COMMERCE
+====================================
+Masukkan total belanja (Rp): 500000
+Belanja di atas Rp500.000 untuk mendapatkan diskon 10%.
+
+===== RINCIAN PEMBAYARAN =====
+Total Belanja: Rp500.000,00
+Diskon: Rp0,00
+Total Bayar: Rp500.000,00
+```
+
+## Cara Menjalankan Program
+
+1. Pastikan Python sudah terinstal di komputer Anda
+2. Unduh file `kalkulator_diskon.py`
+3. Buka terminal atau command prompt
+4. Navigasikan ke direktori tempat file tersebut berada
+5. Jalankan perintah: `python kalkulator_diskon.py`
+6. Ikuti instruksi yang muncul untuk memasukkan total belanja
+
+## Penerapan di Dunia Bisnis Digital
+
+Sistem diskon otomatis seperti ini sangat umum digunakan dalam platform e-commerce dan merupakan bagian dari strategi pemasaran untuk:
+
+1. **Meningkatkan Nilai Order Rata-Rata**: Mendorong pelanggan untuk menambah belanjaan mereka agar mencapai batas diskon.
+
+2. **Meningkatkan Konversi**: Mengurangi tingkat abandonment cart saat pelanggan mengetahui adanya peluang mendapatkan diskon.
+
+3. **Segmentasi Pelanggan**: Memungkinkan perusahaan untuk memberikan penawaran berbeda kepada segmen pelanggan yang berbeda.
+
+4. **Analisis Data**: Memungkinkan bisnis untuk menganalisis efektivitas kebijakan diskon terhadap perilaku pembelian pelanggan.
+
+Pemahaman struktur kontrol percabangan dalam konteks ini adalah dasar penting untuk mengembangkan algoritma bisnis yang lebih kompleks seperti sistem rekomendasi produk, personalisasi penawaran, atau program loyalitas.
+
+# Program Penentu Kelulusan Berdasarkan Rata-rata Nilai
+
+## Peran Tipe Data dan Operator dalam Perhitungan Rata-rata
+
+### Tipe Data yang Digunakan
+
+Dalam program ini, beberapa tipe data yang berperan penting adalah:
+
+1. **Float**
+   - Digunakan untuk menyimpan nilai ujian karena nilai dapat berupa bilangan desimal.
+   - Contoh: `nilai_matematika = 85.5`
+   - Float memungkinkan perhitungan yang lebih presisi dibandingkan integer, terutama untuk pembagian dan rata-rata.
+
+2. **Integer**
+   - Digunakan untuk menyimpan jumlah mata pelajaran (`jumlah_mapel = 3`).
+   - Merepresentasikan bilangan bulat tanpa komponen desimal.
+
+3. **Boolean**
+   - Menyimpan hasil evaluasi kondisi kelulusan (`is_lulus = rata_rata >= 75`).
+   - Hanya memiliki dua nilai: `True` atau `False`.
+   - Sangat penting untuk logika percabangan.
+
+4. **String**
+   - Digunakan untuk menyimpan status kelulusan ("LULUS" atau "TIDAK LULUS").
+   - Memungkinkan kita menyajikan hasil dalam format yang mudah dibaca manusia.
+
+### Operator yang Digunakan
+
+Program ini mendemonstrasikan penggunaan berbagai jenis operator:
+
+1. **Operator Aritmatika**
+   - Penjumlahan (`+`): Menghitung total nilai semua mata pelajaran.
+     ```python
+     jumlah_nilai = nilai_matematika + nilai_bahasa + nilai_ipa
+     ```
+   - Pembagian (`/`): Menghitung rata-rata dengan membagi jumlah nilai dengan jumlah mata pelajaran.
+     ```python
+     rata_rata = jumlah_nilai / jumlah_mapel
+     ```
+   - Pengurangan (`-`): Menghitung poin yang dibutuhkan untuk lulus.
+     ```python
+     poin_kurang = 75 - rata_rata
+     ```
+
+2. **Operator Perbandingan**
+   - Lebih besar atau sama dengan (`>=`): Membandingkan rata-rata dengan nilai minimum untuk lulus.
+     ```python
+     is_lulus = rata_rata >= 75
+     ```
+   - Operator perbandingan lain seperti `<=`, `==`, dan `!=` juga penting dalam validasi range nilai.
+     ```python
+     if not (0 <= nilai <= 100):  # Menggunakan <= dua kali
+     ```
+
+3. **Operator Logika**
+   - `not`: Membalikkan nilai boolean, digunakan untuk kondisi tidak lulus.
+     ```python
+     if not is_lulus:
+     ```
+
+4. **Operator Ternary (Conditional Expression)**
+   - Digunakan untuk menetapkan nilai berdasarkan kondisi dalam satu baris.
+     ```python
+     status = "LULUS" if is_lulus else "TIDAK LULUS"
+     ```
+
+### Bagaimana Tipe Data dan Operator Bekerja Bersama
+
+1. **Konversi Tipe Data**
+   - Input dari pengguna awalnya berupa string dan harus dikonversi ke float:
+     ```python
+     nilai_matematika = float(input("Masukkan nilai Matematika: "))
+     ```
+   - Konversi ini memastikan bahwa nilai dapat digunakan dalam operasi matematis.
+
+2. **Alur Perhitungan**
+   - Nilai diinput sebagai float
+   - Dihitung jumlah dengan operator penjumlahan
+   - Dihitung rata-rata dengan operator pembagian
+   - Hasil rata-rata (float) dibandingkan dengan kriteria kelulusan menggunakan operator perbandingan
+   - Hasil perbandingan (boolean) digunakan untuk menentukan status (string)
+
+3. **Presisi Numerik**
+   - Format output menggunakan `:.2f` untuk membatasi jumlah digit desimal, meningkatkan keterbacaan.
+     ```python
+     print(f"Rata-rata nilai: {rata_rata:.2f}")
+     ```
+
+## Alur Kerja Program
+
+1. Pengguna diminta untuk memasukkan nilai untuk 3 mata pelajaran (Matematika, Bahasa, dan IPA).
+2. Program memvalidasi setiap nilai untuk memastikan berada dalam rentang yang valid (0-100).
+3. Program menghitung jumlah nilai dan membaginya dengan jumlah mata pelajaran untuk mendapatkan rata-rata.
+4. Program mengevaluasi apakah rata-rata memenuhi syarat kelulusan (≥ 75).
+5. Program menampilkan semua nilai, rata-rata, dan status kelulusan.
+6. Jika siswa tidak lulus, program juga menampilkan berapa poin tambahan yang dibutuhkan untuk mencapai kelulusan.
+
+## Contoh Penggunaan Program
+
+### Skenario 1: Siswa Lulus
+
+```
+PROGRAM PENENTU KELULUSAN BERDASARKAN RATA-RATA NILAI
+====================================================
+Masukkan nilai Matematika: 80
+Masukkan nilai Bahasa: 75
+Masukkan nilai IPA: 85
+
+===== HASIL PERHITUNGAN =====
+Nilai Matematika: 80.0
+Nilai Bahasa: 75.0
+Nilai IPA: 85.0
+Rata-rata nilai: 80.00
+Status kelulusan: LULUS
+```
+
+### Skenario 2: Siswa Tidak Lulus
+
+```
+PROGRAM PENENTU KELULUSAN BERDASARKAN RATA-RATA NILAI
+====================================================
+Masukkan nilai Matematika: 65
+Masukkan nilai Bahasa: 70
+Nilai IPA: 75
+
+===== HASIL PERHITUNGAN =====
+Nilai Matematika: 65.0
+Nilai Bahasa: 70.0
+Nilai IPA: 75.0
+Rata-rata nilai: 70.00
+Status kelulusan: TIDAK LULUS
+Anda memerlukan 5.00 poin lagi untuk lulus.
+```
+
+## Penerapan Konsep dalam Bisnis Digital
+
+Konsep tipe data dan operator yang dibahas merupakan fondasi penting dalam pengembangan aplikasi bisnis digital, seperti:
+
+1. **Sistem Penilaian Kinerja**: Menghitung rata-rata KPI karyawan dan menentukan kelayakan bonus atau promosi.
+
+2. **Analisis Finansial**: Mengolah data keuangan, menghitung rasio-rasio penting, dan membuat keputusan berdasarkan threshold tertentu.
+
+3. **Sistem Rekomendasi**: Menghitung skor relevansi produk berdasarkan beberapa parameter dan menampilkan rekomendasi jika skor di atas ambang batas tertentu.
+
+4. **Dashboard Analytics**: Mengolah dan menampilkan data bisnis, sering kali membutuhkan perhitungan rata-rata dan perbandingan dengan target.
+
+Memahami tipe data dan operator dengan baik merupakan keterampilan fundamental yang diperlukan untuk mengembangkan solusi teknologi yang handal dalam bisnis digital.
+
