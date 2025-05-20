@@ -532,3 +532,58 @@ Konsep tipe data dan operator yang dibahas merupakan fondasi penting dalam penge
 
 Memahami tipe data dan operator dengan baik merupakan keterampilan fundamental yang diperlukan untuk mengembangkan solusi teknologi yang handal dalam bisnis digital.
 
+# Program Penghitung Harga Barang
+
+Program sederhana untuk menghitung total harga dari 3 barang yang diinput oleh pengguna.
+
+## Deskripsi
+
+Program ini dibuat untuk membantu penghitungan total harga dari 3 barang. Program akan menerima input harga dari pengguna dan menampilkan rincian serta total harga pembelian.
+
+## Fitur
+
+- Input harga untuk 3 barang
+- Validasi input (hanya menerima angka)
+- Menghitung total harga
+- Menampilkan rincian pembelian dengan format mata uang Rupiah (Rp)
+
+## Cara Penggunaan
+
+1. Jalankan program dengan perintah:
+   ```
+   python menghitung_harga_barang.py
+   ```
+
+2. Masukkan harga untuk ketiga barang saat diminta:
+   ```
+   Masukkan harga 3 barang:
+   Harga barang ke-1: Rp [masukkan harga]
+   Harga barang ke-2: Rp [masukkan harga]
+   Harga barang ke-3: Rp [masukkan harga]
+   ```
+
+3. Program akan menampilkan rincian pembelian dan total harga:
+   ```
+   ==== RINCIAN PEMBELIAN ====
+   Harga barang 1: Rp x,xxx.xx
+   Harga barang 2: Rp x,xxx.xx
+   Harga barang 3: Rp x,xxx.xx
+   --------------------------
+
+   Total Harga adalah: Rpx,xxx.xx
+   ==========================
+   Terima kasih telah berbelanja!
+   ```
+
+## Catatan
+
+- Input harus berupa angka. Jika bukan angka, program akan menampilkan pesan kesalahan: "Input harus berupa angka!"
+- Program menggunakan format mata uang Indonesia (Rupiah) dengan pemisah ribuan dan 2 angka desimal
+
+## Pengembangan
+
+Program ini dapat dikembangkan lebih lanjut dengan menambahkan fitur-fitur seperti:
+- Perhitungan diskon
+- Input jumlah barang yang fleksibel
+- Penyimpanan data pembelian
+- Interface grafis
