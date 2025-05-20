@@ -1,9 +1,7 @@
 # Tugas UTS Mata Kuliah Dasar Algoritma dan Pemrograman Bisnis Digital-2A
-Dalam file README.md ini menjelaskan konsep, cara kegunaan, dan manfaat dari program yang sudah dibuat berdasarkan soal UTS yang sudah dibeerikan di web e-campus
+Dalam file README.md ini menjelaskan konsep, cara kegunaan, dan manfaat dari program yang sudah dibuat berdasarkan soal UTS yang sudah diberikan di web e-campus.
 
 # Faktorial Rekursif
-
-Repository ini berisi implementasi program Python untuk menghitung faktorial menggunakan fungsi rekursif, sebagai bagian dari mata kuliah Dasar Algoritma dan Pemrograman untuk program studi Bisnis Digital.
 
 ## Apa Itu Faktorial?
 
@@ -28,6 +26,10 @@ Contoh:
 4. **Pemeliharaan Kode**: Jika ada perubahan pada algoritma faktorial, kita hanya perlu mengubah satu tempat, yaitu fungsi itu sendiri, tidak perlu mengubah seluruh kode.
 
 5. **Keterbacaan**: Kode menjadi lebih terstruktur dan mudah dibaca karena terbagi dalam bagian-bagian logis dengan penamaan yang jelas.
+
+## Apa Itu Rekursi?
+
+Rekursi adalah teknik dalam pemrograman di mana sebuah fungsi memanggil dirinya sendiri untuk menyelesaikan suatu masalah.
 
 ## Cara Kerja Rekursi dalam Menghitung Faktorial
 
@@ -91,21 +93,27 @@ Jadi, faktorial(5) = 120.
 - Risiko stack overflow untuk input yang besar
 - Terkadang kurang efisien dibandingkan pendekatan iteratif
 
-## Cara Menjalankan Program
-
-1. Pastikan Python sudah terinstal di komputer Anda
-2. Unduh file `faktorial_rekursif.py`
-3. Buka terminal atau command prompt
-4. Navigasikan ke direktori tempat file tersebut berada
-5. Jalankan perintah: `python faktorial_rekursif.py`
-6. Ikuti instruksi di layar untuk memasukkan angka
-
 ## Contoh Output Program
 
 ```
 Masukkan angka untuk dihitung faktorialnya: 5
 Faktorial dari 5 adalah 120
 ```
+
+## Kapan Rekursi Digunakan?
+
+- Saat masalah bisa dipecah menjadi sub-masalah sejenis.
+- Contoh penggunaan umum:
+- Faktorial
+- Fibonacci
+- Menelusuri struktur folder/file
+- Algoritma pencarian (DFS)
+- Pohon biner dan struktur data rekursif lainnya
+
+## Kapan tidak cocok pakai rekursi?
+
+- Jika rekursi terlalu dalam, bisa menyebabkan Stack Overflow.
+- Dalam kasus sederhana, perulangan biasa (for atau while) lebih efisien.
 
 ## Catatan Pembelajaran
 
