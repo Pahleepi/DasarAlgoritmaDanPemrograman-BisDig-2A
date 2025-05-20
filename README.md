@@ -103,24 +103,24 @@ Faktorial dari 5 adalah 120
 ## Kapan Rekursi Digunakan?
 
 1. **Masalah yang dapat dibagi menjadi submasalah yang identik**
-- Perhitungan faktorial
-- Fibonacci
-- Pencarian biner
-- Algoritma divide-and-conquer
+   - Perhitungan faktorial
+   - Fibonacci
+   - Pencarian biner
+   - Algoritma divide-and-conquer
 
 2. **Struktur data rekursif**
-- Pohon (traversal, pencarian)
-- Graf (DFS, BFS)
-- Linked list
+   - Pohon (traversal, pencarian)
+   - Graf (DFS, BFS)
+   - Linked list
 
 3. **Kasus di mana solusi rekursif lebih jelas dan mudah dipahami**
-- Algoritma backtracking (seperti 8-queen problem)
-- Algoritma dalam permainan (seperti catur)
+   - Algoritma backtracking (seperti 8-queen problem)
+   - Algoritma dalam permainan (seperti catur)
 
 4. **Definisi matematis yang secara alami rekursif**
-- Pengurutan (merge sort, quicksort)
-- Tower of Hanoi
-- Problem kombinatorial
+   - Pengurutan (merge sort, quicksort)
+   - Tower of Hanoi
+   - Problem kombinatorial
 
 ## Kapan Rekursi Tidak Cocok Digunakan
 
@@ -205,8 +205,8 @@ Perulangan memungkinkan program untuk mengeksekusi tugas berulang seperti pengum
 ## Contoh Output Program
 
 ```
-PROGRAM PENCARI NILAI TERTINGGI SISWA
-=====================================
+MENCARI NILAI TERTINGGI SISWA
+=============================
 Input nilai siswa ke-1: 75
 Input nilai siswa ke-2: 82
 Input nilai siswa ke-3: 90
