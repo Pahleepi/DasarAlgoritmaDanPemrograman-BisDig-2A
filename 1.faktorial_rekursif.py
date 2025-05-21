@@ -23,4 +23,3 @@ try:
         print(f"Faktorial dari {angka} adalah {hasil}")
 except ValueError:
     print("Masukkan angka bulat yang valid.")
-
