@@ -532,7 +532,7 @@ Konsep tipe data dan operator yang dibahas merupakan fondasi penting dalam penge
 
 Memahami tipe data dan operator dengan baik merupakan keterampilan fundamental yang diperlukan untuk mengembangkan solusi teknologi yang handal dalam bisnis digital.
 
-#5. Program Penghitung Harga Barang
+# 5. Program Penghitung Harga Barang
 
 Program sederhana untuk menghitung total harga dari 3 barang yang diinput oleh pengguna.
 
