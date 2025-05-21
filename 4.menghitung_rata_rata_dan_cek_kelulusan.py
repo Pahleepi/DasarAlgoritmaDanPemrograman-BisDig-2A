@@ -54,3 +54,4 @@ if __name__ == "__main__":
     print("MENENTUKAN KELULUSAN BERDASARKAN RATA-RATA NILAI")
     print("================================================")
     hitung_kelulusan()
+
