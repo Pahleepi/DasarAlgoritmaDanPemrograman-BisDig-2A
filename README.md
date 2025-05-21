@@ -1,4 +1,4 @@
-# Tugas UTS Mata Kuliah Dasar Algoritma dan Pemrograman Bisnis Digital-2A
+# 1. Tugas UTS Mata Kuliah Dasar Algoritma dan Pemrograman Bisnis Digital-2A
 Dalam file README.md ini menjelaskan konsep, cara kegunaan, dan manfaat dari program yang sudah dibuat berdasarkan soal UTS yang sudah diberikan di web e-campus.
 
 # Faktorial Rekursif
@@ -154,7 +154,7 @@ Dalam konteks bisnis digital, pemahaman fungsi rekursif membantu dalam pengemban
 - Optimisasi proses bisnis
 - Pengembangan sistem cerdas
 
-# Pencarian Nilai Tertinggi Siswa Menggunakan Perulangan dan Array
+# 2. Pencarian Nilai Tertinggi Siswa Menggunakan Perulangan dan Array
 
 ## Penjelasan Penggunaan Perulangan dan Array dalam Kasus Ini
 
@@ -251,7 +251,7 @@ Konsep-konsep yang digunakan dalam program ini (array, perulangan, pencarian nil
 
 Kemampuan untuk menyimpan, memproses, dan menganalisis data menggunakan struktur data dan algoritma yang tepat adalah keterampilan fundamental dalam pengembangan solusi bisnis digital.
 
-# Kalkulator Diskon E-Commerce Menggunkan Struktur Kontrol Percabangan
+# 3. Kalkulator Diskon E-Commerce Menggunkan Struktur Kontrol Percabangan
 
 ## Penjelasan Struktur Kontrol Percabangan untuk Logika Diskon
 
@@ -384,7 +384,7 @@ Sistem diskon otomatis seperti ini sangat umum digunakan dalam platform e-commer
 
 Pemahaman struktur kontrol percabangan dalam konteks ini adalah dasar penting untuk mengembangkan algoritma bisnis yang lebih kompleks seperti sistem rekomendasi produk, personalisasi penawaran, atau program loyalitas.
 
-# Program Penentu Kelulusan Berdasarkan Rata-rata Nilai
+# 4. Program Penentu Kelulusan Berdasarkan Rata-rata Nilai
 
 ## Peran Tipe Data dan Operator dalam Perhitungan Rata-rata
 
@@ -532,7 +532,7 @@ Konsep tipe data dan operator yang dibahas merupakan fondasi penting dalam penge
 
 Memahami tipe data dan operator dengan baik merupakan keterampilan fundamental yang diperlukan untuk mengembangkan solusi teknologi yang handal dalam bisnis digital.
 
-# Program Penghitung Harga Barang
+#5. Program Penghitung Harga Barang
 
 Program sederhana untuk menghitung total harga dari 3 barang yang diinput oleh pengguna.
 
