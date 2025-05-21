@@ -46,3 +46,4 @@ if __name__ == "__main__":
     print("KALKULATOR DISKON E-COMMERCE")
     print("============================")
     hitung_total_bayar()
+
